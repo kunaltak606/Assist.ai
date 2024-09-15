@@ -231,18 +231,7 @@
                   x-on:focusin.window="! $refs.panel.contains($event.target) && close()" x-id="['dropdown-button']"
                   class="relative">
                   <!-- Button -->
-                  <button x-ref="button" x-on:click="toggle()" :aria-expanded="open"
-                    :aria-controls="$id('dropdown-button')" type="button"
-                    class="flex hover:text-white transition-colors"
-                    :class="count > 0 ? 'text-[#e730ca] max-w-[46px]' : 'text-white/20 max-w-[28px]'">
-                    <svg class="bell-con" fill="currentColor" viewBox="0 0 448 512" width="50" title="bell">
-                      <path
-                        d="M224 512c35.32 0 63.97-28.65 63.97-64H160.03c0 35.35 28.65 64 63.97 64zm215.39-149.71c-19.32-20.76-55.47-51.99-55.47-154.29 0-77.7-54.48-139.9-127.94-155.16V32c0-17.67-14.32-32-31.98-32s-31.98 14.33-31.98 32v20.84C118.56 68.1 64.08 130.3 64.08 208c0 102.3-36.15 133.53-55.47 154.29-6 6.45-8.66 14.16-8.61 21.71.11 16.4 12.98 32 32.1 32h383.8c19.12 0 32-15.6 32.1-32 .05-7.55-2.61-15.27-8.61-21.71z" />
-                    </svg>
-                    <span x-show="count > 0"
-                      class="flex justify-center items-center text-xs notification-count text-white bg-[#e730ca] rounded-full min-h-[18px] min-w-[18px] max-h-[18px] max-w-[18px]"
-                      x-text="count"></span>
-                  </button>
+                  
 
                   <!-- Panel -->
                   <div x-ref="panel" x-show="open" x-transition.origin.top.left x-on:click.outside="close($refs.button)"
@@ -403,34 +392,14 @@
                     <div
                       class="flex items-end mr-[55px] 2xl:mr-0 w-[85px] sm:w-[175px] h-[126px] sm:h-[225px] 2xl:w-[200px] 2xl:h-[250px] rounded-md sm:rounded-2xl 2xl:rounded-3xl bg-center bg-cover bg-no-repeat scale-[0.6] sm:scale-100 overflow-hidden transition-all"
                       style="background-image: url('https://coinstats.app/blog/wp-content/uploads/2023/06/The-Rise-of-NFTs-How-Will-AI-Impact-the-NFT-Art-Ecosystem-copy-1-1200x900.webp'); animation: float 6s ease-in-out infinite;">
-                      <div class="hidden sm:block flex-1 bg-white h-[95px] px-4 glass">
-                        <h4 class="text-xs font-bold text-[#161616] py-4 truncate max-w-[145px] 2xl:max-w-none">Balistic
-                          Wave Collection #1</h4>
+                      <div class="hidden sm:block flex-1 bg-white h-[50px] px-4 glass">
+                        <h4 class="text-xs font-bold text-[#161616] py-4 truncate max-w-[145px] 2xl:max-w-none">AI</h4>
                         <div class="flex items-center justify-between font-bold text-[0.625rem]">
                           <div class="flex flex-col">
-                            <span class="text-[#646464]">Curent Bid</span>
-                            <span class="flex items-center space-x-1 text-[#161616]">
-                              <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                  d="M8 16C3.5815 16 0 12.4185 0 8C0 3.5815 3.5815 0 8 0C12.4185 0 16 3.5815 16 8C16 12.4185 12.4185 16 8 16ZM11.997 8.1095L8.249 2L4.5 8.11L8.249 10.2865L11.997 8.1095ZM12 8.808L8.249 10.9835L4.5 8.8085L8.249 13.9975L12 8.808Z"
-                                  fill="#F1F1F1" />
-                                <path
-                                  d="M8.24902 2V6.435L11.9975 8.11L8.24902 2ZM8.24902 10.984V13.9975L12 8.808L8.24902 10.984Z"
-                                  fill="blue" fill-opacity="0.298" />
-                                <path d="M8.24902 10.2865L11.9975 8.11003L8.24902 6.43604V10.2865Z" fill="blue"
-                                  fill-opacity="0.801" />
-                                <path d="M4.5 8.11003L8.249 10.2865V6.43604L4.5 8.11003Z" fill="blue"
-                                  fill-opacity="0.298" />
-                              </svg>
-                              <span>0.2 ETH</span>
-                            </span>
+                            
                           </div>
                           <div>
-                            <button type="button"
-                              class="text-[#161616] hover:text-[#E730CA] border rounded-full border-[#161616] hover:border-[#E730CA] w-12 h-6 transition-colors">
-                              Bid
-                            </button>
+                            
                           </div>
                         </div>
                       </div>
@@ -439,35 +408,15 @@
                   <div class="stat" style="--i:7">
                     <div
                       class="flex items-end mr-[55px] 2xl:mr-0 w-[85px] sm:w-[175px] h-[126px] sm:h-[225px] 2xl:w-[200px] 2xl:h-[250px] rounded-md sm:rounded-2xl 2xl:rounded-3xl bg-center bg-cover bg-no-repeat scale-[0.6] sm:scale-100 overflow-hidden transition-all"
-                      style="background-image: url('https://uk.sganalytics.com/assets/uploads/fcimages/images/NFT%20digital%20art.jpg'); animation: float 8s ease-in-out infinite;">
-                      <div class="hidden sm:block flex-1 bg-white h-[95px] px-4 glass">
-                        <h4 class="text-xs font-bold text-[#161616] py-4 truncate max-w-[145px] 2xl:max-w-none">Balistic
-                          Wave Collection #1</h4>
+                      style="background-image: url('https://99designs-blog.imgix.net/blog/wp-content/uploads/2021/05/merlin_184196631_939fb22d-b909-4205-99d9-b464fb961d32-superJumbo.jpeg?auto=format&q=60&fit=max&w=930'); animation: float 8s ease-in-out infinite;">
+                      <div class="hidden sm:block flex-1 bg-white h-[50px] px-4 glass">
+                        <h4 class="text-xs font-bold text-[#161616] py-4 truncate max-w-[145px] 2xl:max-w-none">Innovation</h4>
                         <div class="flex items-center justify-between font-bold text-[0.625rem]">
                           <div class="flex flex-col">
-                            <span class="text-[#646464]">Curent Bid</span>
-                            <span class="flex items-center space-x-1 text-[#161616]">
-                              <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                  d="M8 16C3.5815 16 0 12.4185 0 8C0 3.5815 3.5815 0 8 0C12.4185 0 16 3.5815 16 8C16 12.4185 12.4185 16 8 16ZM11.997 8.1095L8.249 2L4.5 8.11L8.249 10.2865L11.997 8.1095ZM12 8.808L8.249 10.9835L4.5 8.8085L8.249 13.9975L12 8.808Z"
-                                  fill="#F1F1F1" />
-                                <path
-                                  d="M8.24902 2V6.435L11.9975 8.11L8.24902 2ZM8.24902 10.984V13.9975L12 8.808L8.24902 10.984Z"
-                                  fill="blue" fill-opacity="0.298" />
-                                <path d="M8.24902 10.2865L11.9975 8.11003L8.24902 6.43604V10.2865Z" fill="blue"
-                                  fill-opacity="0.801" />
-                                <path d="M4.5 8.11003L8.249 10.2865V6.43604L4.5 8.11003Z" fill="blue"
-                                  fill-opacity="0.298" />
-                              </svg>
-                              <span>0.2 ETH</span>
-                            </span>
+                            
                           </div>
                           <div>
-                            <button type="button"
-                              class="text-[#161616] hover:text-[#E730CA] border rounded-full border-[#161616] hover:border-[#E730CA] w-12 h-6 transition-colors">
-                              Bid
-                            </button>
+                           
                           </div>
                         </div>
                       </div>
@@ -477,34 +426,14 @@
                     <div
                       class="flex items-end mr-[55px] 2xl:mr-0 w-[85px] sm:w-[175px] h-[126px] sm:h-[225px] 2xl:w-[200px] 2xl:h-[250px] rounded-md sm:rounded-2xl 2xl:rounded-3xl bg-center bg-cover bg-no-repeat overflow-hidden transition-all"
                       style="background-image: url('https://99designs-blog.imgix.net/blog/wp-content/uploads/2021/05/merlin_184196631_939fb22d-b909-4205-99d9-b464fb961d32-superJumbo.jpeg?auto=format&q=60&fit=max&w=930'); animation: floatdown 6.5s ease-in-out infinite;">
-                      <div class="hidden sm:block flex-1 bg-white h-[95px] px-4 glass">
-                        <h4 class="text-xs font-bold text-[#161616] py-4 truncate max-w-[145px] 2xl:max-w-none">Balistic
-                          Wave Collection #1</h4>
+                      <div class="hidden sm:block flex-1 bg-white h-[50px] px-4 glass">
+                        <h4 class="text-xs font-bold text-[#161616] py-4 truncate max-w-[145px] 2xl:max-w-none">Education</h4>
                         <div class="flex items-center justify-between font-bold text-[0.625rem]">
                           <div class="flex flex-col">
-                            <span class="text-[#646464]">Curent Bid</span>
-                            <span class="flex items-center space-x-1 text-[#161616]">
-                              <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                  d="M8 16C3.5815 16 0 12.4185 0 8C0 3.5815 3.5815 0 8 0C12.4185 0 16 3.5815 16 8C16 12.4185 12.4185 16 8 16ZM11.997 8.1095L8.249 2L4.5 8.11L8.249 10.2865L11.997 8.1095ZM12 8.808L8.249 10.9835L4.5 8.8085L8.249 13.9975L12 8.808Z"
-                                  fill="#F1F1F1" />
-                                <path
-                                  d="M8.24902 2V6.435L11.9975 8.11L8.24902 2ZM8.24902 10.984V13.9975L12 8.808L8.24902 10.984Z"
-                                  fill="blue" fill-opacity="0.298" />
-                                <path d="M8.24902 10.2865L11.9975 8.11003L8.24902 6.43604V10.2865Z" fill="blue"
-                                  fill-opacity="0.801" />
-                                <path d="M4.5 8.11003L8.249 10.2865V6.43604L4.5 8.11003Z" fill="blue"
-                                  fill-opacity="0.298" />
-                              </svg>
-                              <span>0.2 ETH</span>
-                            </span>
+                            
                           </div>
                           <div>
-                            <button type="button"
-                              class="text-[#161616] hover:text-[#E730CA] border rounded-full border-[#161616] hover:border-[#E730CA] w-12 h-6 transition-colors">
-                              Bid
-                            </button>
+                           
                           </div>
                         </div>
                       </div>
