@@ -1,0 +1,128 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Roadmap</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, #f06292, #ff9800);
+            color: white;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        h1 {
+            font-size: 4em;
+            margin-bottom: 20px;
+            text-shadow: 0 0 10px black;
+        }
+
+        .container {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px black;
+        }
+
+        .roadmap {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .day {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        .day:nth-child(even) {
+            background-color: rgba(255, 255, 255, 0.3);
+        }
+
+        .day h3 {
+            font-size: 1.5em;
+            margin: 0;
+            color: #ffc107;
+        }
+
+        .day p {
+            font-size: 1em;
+            margin: 0;
+        }
+
+        .resources {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .resources h2 {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
+        .resource {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .resource a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .resource a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>30 Day Frontend Roadmap</h1>
+    <div class="container">
+        <div class="roadmap">
+            <h2>Day 1: HTML Basics</h2>
+            <div class="day">
+                <h3>Topics:</h3>
+                <p>HTML Structure, Elements, Attributes, Text Formatting</p>
+            </div>
+            <h2>Day 2: CSS Basics</h2>
+            <div class="day">
+                <h3>Topics:</h3>
+                <p>Selectors, Colors, Fonts, Box Model, Layout</p>
+            </div>
+            <h2>Day 3: JavaScript Introduction</h2>
+            <div class="day">
+                <h3>Topics:</h3>
+                <p>Data Types, Variables, Operators, Control Flow</p>
+            </div>
+            <!-- Add more days and topics here -->
+        </div>
+        <div class="resources">
+            <h2>Resources</h2>
+            <div class="resource">
+                <a href="https://www.w3schools.com/">W3Schools</a>
+            </div>
+            <div class="resource">
+                <a href="https://developer.mozilla.org/en-US/">MDN Web Docs</a>
+            </div>
+            <!-- Add more resources here -->
+        </div>
+    </div>
+</body>
+</html>
+```

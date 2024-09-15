@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Results</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212; /* Dark black background */
+            color: #fff; /* White text color */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            text-align: center;
+        }
+
+        .container {
+            background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
+            padding: 20px;
+            border-radius: 8px;
+            max-width: 600px;
+        }
+
+        h1 {
+            color: #f39c12; /* Orange header text */
+        }
+
+        .dashboard {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .dashboard .item {
+            padding: 10px;
+            background-color: #333; /* Dark background for items */
+            border-radius: 5px;
+        }
+
+        .dashboard .item.correct {
+            background-color: #2ecc71; /* Green for correct answers */
+        }
+
+        .dashboard .item.incorrect {
+            background-color: #e74c3c; /* Red for incorrect answers */
+        }
+
+        .certificate-button {
+            margin-top: 20px;
+        }
+      button[type="submit"] {
+            background-color: #3498db; /* Blue button background */
+            color: #fff; /* White text color */
+            border: none;
+            padding: 12px 24px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #2980b9; /* Darker blue on hover */
+        }
+
+        a {
+            color: #3498db; /* Blue link color */
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Quiz Results</h1>
+        <div class="dashboard">
+            <div class="item correct">
+                <h3>Correct Answers</h3>
+                <p>{{ correct }}</p>
+            </div>
+            <div class="item incorrect">
+                <h3>Incorrect Answers</h3>
+                <p>{{ incorrect }}</p>
+            </div>
+        </div>
+        <form class="certificate-button" action="/certificate" method="post">
+            <label for="username">Enter Your Name:</label>
+            <input type="text" id="username" name="username" required>
+            <button type="submit">Download Certificate</button>
+        </form>
+        <a href="{{ url_for('quiz') }}">Take another quiz</a>
+    </div>
+</body>
+</html>
